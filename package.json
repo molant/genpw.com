@@ -16,16 +16,23 @@
   "scripts": {
     "build:css": "node-sass src/scss/style.scss dist/css/style.css",
     "build:html": "pug -o dist -E html src/pug/*.pug",
+    "build:js": "webpack",
     "clean": "rimraf dist npm-debug.log",
     "lint": "eslint .",
     "watch": "run-s clean watch:*",
     "watch:css": "run-s 'build:css -- -r -w src/scss'",
-    "watch:html": "run-s 'build:html -- -w'"
+    "watch:html": "run-s 'build:html -- -w'",
+    "watch:js": "run-s 'build:js -- -w'"
   },
   "dependencies": {
-    "picnic": "^6.1.5"
+    "genpw": "^1.0.5",
+    "picnic": "^6.1.5",
+    "umbrellajs": "^2.6.6"
   },
   "devDependencies": {
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.14.0",
+    "babel-register": "^6.14.0",
     "eslint": "^3.5.0",
     "eslint-config-airbnb": "^11.1.0",
     "eslint-plugin-import": "^1.13.0",
@@ -35,6 +42,7 @@
     "npm-run-all": "^3.1.0",
     "pug": "^2.0.0-beta6",
     "pug-cli": "^1.0.0-alpha6",
-    "rimraf": "^2.5.4"
+    "rimraf": "^2.5.4",
+    "webpack": "^1.13.2"
   }
 }
