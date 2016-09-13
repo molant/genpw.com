@@ -1,0 +1,16 @@
+{
+  "name": "genpw.com",
+  "description": "Website for genpw",
+  "version": "1.0.0",
+  "private": true,
+  "homepage": "https://genpw.com",
+  "author": "Matthew <matthew@mi11er.net> (https://mi11er.net)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/genpw/genpw.com/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/genpw/genpw.com.git"
+  }
+}
