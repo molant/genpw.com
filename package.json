@@ -14,13 +14,21 @@
     "url": "https://github.com/genpw/genpw.com.git"
   },
   "scripts": {
-    "lint": "eslint ."
+    "build:html": "pug -o dist -E html src/pug/*.pug",
+    "clean": "rimraf dist npm-debug.log",
+    "lint": "eslint .",
+    "watch": "run-s clean watch:*",
+    "watch:html": "run-s 'build:html -- -w'"
   },
   "devDependencies": {
     "eslint": "^3.5.0",
     "eslint-config-airbnb": "^11.1.0",
     "eslint-plugin-import": "^1.13.0",
     "eslint-plugin-jsx-a11y": "^2.2.2",
-    "eslint-plugin-react": "^6.2.1"
+    "eslint-plugin-react": "^6.2.1",
+    "npm-run-all": "^3.1.0",
+    "pug": "^2.0.0-beta6",
+    "pug-cli": "^1.0.0-alpha6",
+    "rimraf": "^2.5.4"
   }
 }
