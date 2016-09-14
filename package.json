@@ -14,7 +14,7 @@
     "url": "https://github.com/genpw/genpw.com.git"
   },
   "scripts": {
-    "build": "run-s clean build:*",
+    "build": "run-s lint clean build:*",
     "build:css": "node-sass src/scss/style.scss dist/css/style.css",
     "build:html": "pug -o dist -E html src/pug/*.pug",
     "build:js": "webpack",
