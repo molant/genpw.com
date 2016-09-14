@@ -18,7 +18,7 @@
     "build:css": "node-sass src/scss/style.scss dist/css/style.css",
     "build:html": "pug -o dist -E html src/pug/*.pug",
     "build:js": "webpack",
-    "clean": "rimraf dist npm-debug.log",
+    "clean": "rimraf dist firebase-debug.log npm-debug.log",
     "deploy": "run-s build deploy:firebase",
     "deploy:firebase": "firebase deploy",
     "lint": "eslint .",
