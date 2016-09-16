@@ -3,7 +3,10 @@ html(lang='en')
 
   head
     //- Current host does not support setting this as an http header.
-    meta(http-equiv='Content-Security-Policy', content="default-src 'self'; connect-src 'self'; script-src 'self';")
+    meta(
+      http-equiv='Content-Security-Policy',
+      content="default-src 'self'; connect-src 'self'; script-src 'self' https://www.google-analytics.com; img-src 'self' https://www.google-analytics.com;"
+    )
     //- meta(http-equiv='Content-Security-Policy', content="default-src 'self'; connect-src 'self' ws://localhost:3000; script-src 'self' 'sha256-wOkE+RM/je0zeueoj0PVQ9YQSL5jAudGXzIxjirjouY=';")
     meta(http-equiv='x-ua-compatible', content='ie=edge')
     meta(charset='utf-8')
@@ -11,6 +14,8 @@ html(lang='en')
       title genpw | Password Generator
     meta(name='viewport', content='width=device-width, initial-scale=1')
     link(rel='stylesheet', href='css/style.css')
+    script(src="js/main.js", async)
+    script(src="https://www.google-analytics.com/analytics.js", async)
 
   body
     div.github-corner-container
@@ -38,5 +43,3 @@ html(lang='en')
           )
 
     block content
-
-    script(src="js/main.js")

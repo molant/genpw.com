@@ -1,6 +1,9 @@
 import { PasswordGenerator } from 'genpw';
 import { u } from 'umbrellajs';
+import { ready, googleAnalytics } from './miscfunctions';
 
-const pw = new PasswordGenerator();
+googleAnalytics('UA-84274722-1');
 
-u('#theBestPassword').text(pw.generate(7));
+ready(() => {
+  u('#theBestPassword').text(new PasswordGenerator().generate(7));
+});
