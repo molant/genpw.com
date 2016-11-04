@@ -33,7 +33,7 @@
   },
   "dependencies": {
     "genpw": "1.0.7",
-    "picnic": "6.2.4",
+    "picnic": "6.2.5",
     "umbrellajs": "2.6.7"
   },
   "devDependencies": {
