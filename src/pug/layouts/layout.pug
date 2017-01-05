@@ -2,12 +2,6 @@ doctype html
 html(lang='en')
 
   head
-    //- Current host does not support setting this as an http header.
-    meta(
-      http-equiv='Content-Security-Policy',
-      content="default-src 'self'; connect-src 'self'; script-src 'self' https://www.google-analytics.com; img-src 'self' https://www.google-analytics.com;"
-    )
-    //- meta(http-equiv='Content-Security-Policy', content="default-src 'self'; connect-src 'self' ws://localhost:3000; script-src 'self' 'sha256-wOkE+RM/je0zeueoj0PVQ9YQSL5jAudGXzIxjirjouY=';")
     meta(http-equiv='x-ua-compatible', content='ie=edge')
     meta(charset='utf-8')
     block title
