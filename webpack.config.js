@@ -14,7 +14,7 @@ module.exports = {
         loader: 'babel',
       },
       {
-        test: /\.modernizrrc$/,
+        test: /\.modernizrrc.js$/,
         loader: 'modernizr',
       },
     ],
