@@ -32,30 +32,29 @@
     "watch:js": "run-s 'build:js -- -w'"
   },
   "dependencies": {
-    "babel-preset-env": "^1.1.8",
+    "babel-core": "6.23.1",
+    "babel-loader": "6.3.2",
+    "babel-preset-env": "1.1.8",
+    "browser-sync": "2.18.8",
+    "commitizen": "2.9.6",
+    "cz-conventional-changelog": "2.0.0",
+    "eslint": "3.16.1",
+    "eslint-config-airbnb-base": "11.1.0",
+    "eslint-plugin-import": "2.2.0",
+    "firebase-tools": "3.3.0",
     "genpw": "1.0.7",
-    "picnic": "6.3.2",
-    "umbrellajs": "2.6.7"
-  },
-  "devDependencies": {
-    "babel-core": "^6.22.1",
-    "babel-loader": "^6.2.10",
-    "browser-sync": "^2.18.7",
-    "commitizen": "^2.9.5",
-    "cz-conventional-changelog": "^2.0.0",
-    "eslint": "^3.16.1",
-    "eslint-config-airbnb-base": "^11.1.0",
-    "eslint-plugin-import": "^2.2.0",
-    "firebase-tools": "^3.2.2",
-    "modernizr": "^3.3.1",
+    "modernizr": "3.3.1",
     "modernizr-loader": "1.0.1",
-    "node-sass": "^4.2.0",
-    "npm-run-all": "^4.0.2",
-    "pug": "^2.0.0-beta8",
-    "pug-cli": "^1.0.0-alpha6",
-    "rimraf": "^2.5.4",
-    "webpack": "^1.13.3"
+    "node-sass": "4.5.0",
+    "npm-run-all": "4.0.2",
+    "picnic": "6.3.2",
+    "pug": "2.0.0-beta8",
+    "pug-cli": "1.0.0-alpha6",
+    "rimraf": "2.6.0",
+    "umbrellajs": "2.6.7",
+    "webpack": "1.13.3"
   },
+  "devDependencies": {},
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
