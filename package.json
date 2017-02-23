@@ -43,7 +43,7 @@
     "browser-sync": "^2.18.7",
     "commitizen": "^2.9.5",
     "cz-conventional-changelog": "^2.0.0",
-    "eslint": "^3.15.0",
+    "eslint": "^3.16.1",
     "eslint-config-airbnb-base": "^11.1.0",
     "eslint-plugin-import": "^2.2.0",
     "firebase-tools": "^3.2.2",
