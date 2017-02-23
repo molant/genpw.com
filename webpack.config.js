@@ -12,6 +12,16 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules|bower_components/,
         loader: 'babel',
+        query: {
+          presets: [[
+            'env',
+            {
+              targets: {
+                browsers: ['last 2 versions', 'safari >= 7'],
+              },
+            },
+          ]],
+        },
       },
       {
         test: /\.modernizrrc.js$/,
