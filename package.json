@@ -2,16 +2,17 @@
   "name": "genpw.com",
   "description": "Website for genpw",
   "version": "1.0.0",
-  "private": true,
   "homepage": "https://genpw.com",
-  "author": "Matthew <matthew@mi11er.net> (https://mi11er.net)",
+  "author": "Matthew Miller <matthew@mi11er.net> (https://mi11er.net)",
+  "contributors": [],
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/genpw/genpw.com/issues"
-  },
+  "private": true,
   "repository": {
     "type": "git",
     "url": "https://github.com/genpw/genpw.com.git"
+  },
+  "bugs": {
+    "url": "https://github.com/genpw/genpw.com/issues"
   },
   "scripts": {
     "build": "run-s lint clean build:*",
