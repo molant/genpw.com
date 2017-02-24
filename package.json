@@ -24,9 +24,9 @@
     "deploy:firebase": "firebase deploy",
     "lint": "eslint .",
     "lint:fix": "run-s 'lint -- --fix'",
-    "start": "run-p watch start:*",
+    "start": "run-p watch start:firebase start:browsersync",
     "start:browsersync": "browser-sync start --proxy 'localhost:5000' --files dist/",
-    "start:firebase": "firebase serve",
+    "start:firebase": "babel-node lib/bulid.js",
     "watch": "run-p watch:*",
     "watch:css": "run-s 'build:css -- -r -w src/scss'",
     "watch:html": "run-s 'build:html -- -w'",
@@ -45,6 +45,7 @@
     "eslint-plugin-import": "2.2.0",
     "firebase-tools": "3.4.0",
     "genpw": "1.0.7",
+    "minimist": "1.2.0",
     "modernizr": "3.3.1",
     "modernizr-loader": "1.0.1",
     "node-sass": "4.5.0",
@@ -63,13 +64,15 @@
     }
   },
   "babel": {
-    "presets": [[
-      "env",
-      {
-        "targets": {
-          "node": "current"
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "node": "current"
+          }
         }
-      }
-    ]]
+      ]
+    ]
   }
 }
