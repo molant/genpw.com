@@ -671,9 +671,9 @@ babel-polyfill@^6.23.0:
     core-js "^2.4.0"
     regenerator-runtime "^0.10.0"
 
-babel-preset-env@1.1.8:
-  version "1.1.8"
-  resolved "https://registry.yarnpkg.com/babel-preset-env/-/babel-preset-env-1.1.8.tgz#c46734c6233c3f87d177513773db3cf3c1758aaa"
+babel-preset-env@1.1.10:
+  version "1.1.10"
+  resolved "https://registry.yarnpkg.com/babel-preset-env/-/babel-preset-env-1.1.10.tgz#c1055b69d25c3cf5383a925ee5c553c323558368"
   dependencies:
     babel-plugin-check-es2015-constants "^6.3.13"
     babel-plugin-syntax-trailing-function-commas "^6.13.0"
@@ -703,6 +703,8 @@ babel-preset-env@1.1.8:
     babel-plugin-transform-exponentiation-operator "^6.8.0"
     babel-plugin-transform-regenerator "^6.6.0"
     browserslist "^1.4.0"
+    electron-to-chromium "^1.1.0"
+    invariant "^2.2.2"
 
 babel-register@^6.23.0:
   version "6.23.0"
@@ -1611,7 +1613,7 @@ ee-first@1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
 
-electron-to-chromium@^1.2.3:
+electron-to-chromium@^1.1.0, electron-to-chromium@^1.2.3:
   version "1.2.3"
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.2.3.tgz#4b4d04d237c301f72e2d15c2137b2b79f9f5ab76"
 
@@ -2092,9 +2094,9 @@ findup-sync@0.4.2:
     micromatch "^2.3.7"
     resolve-dir "^0.1.0"
 
-firebase-tools@3.3.0:
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/firebase-tools/-/firebase-tools-3.3.0.tgz#78b4d1107acdf7cd3ecd6e02e07c1599d9daf24e"
+firebase-tools@3.4.0:
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/firebase-tools/-/firebase-tools-3.4.0.tgz#c26d066c6f07fbebaa3a694d15c6a6776f16e50c"
   dependencies:
     JSONStream "^1.2.1"
     archiver "^0.16.0"
@@ -2647,7 +2649,7 @@ interpret@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/interpret/-/interpret-1.0.1.tgz#d579fb7f693b858004947af39fa0db49f795602c"
 
-invariant@^2.2.0:
+invariant@^2.2.0, invariant@^2.2.2:
   version "2.2.2"
   resolved "https://registry.yarnpkg.com/invariant/-/invariant-2.2.2.tgz#9e1f56ac0acdb6bf303306f338be3b204ae60360"
   dependencies:
@@ -4969,13 +4971,9 @@ umbrellajs@2.6.7:
   version "2.6.7"
   resolved "https://registry.yarnpkg.com/umbrellajs/-/umbrellajs-2.6.7.tgz#40c3fe79376c251fb090fc7d7c5755023aaffdd7"
 
-underscore@1.7.x:
+underscore@1.7.x, underscore@1.x:
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/underscore/-/underscore-1.7.0.tgz#6bbaf0877500d36be34ecaa584e0db9fef035209"
-
-underscore@1.x:
-  version "1.8.3"
-  resolved "https://registry.yarnpkg.com/underscore/-/underscore-1.8.3.tgz#4f3fb53b106e6097fcf9cb4109f2a5e9bdfa5022"
 
 universal-analytics@^0.3.9:
   version "0.3.11"
