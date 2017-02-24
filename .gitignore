@@ -1,4 +1,9 @@
-/dist/
-/firebase-debug.log
+# Dependency directories
 /node_modules/
-/npm-debug.log
+
+# Logs
+/firebase-debug.log
+/npm-debug.log*
+
+# Output
+/dist/
