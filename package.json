@@ -33,6 +33,7 @@
     "watch:js": "run-s 'build:js -- -w'"
   },
   "dependencies": {
+    "babel-cli": "6.23.0",
     "babel-core": "6.23.1",
     "babel-loader": "6.3.2",
     "babel-preset-env": "1.1.8",
@@ -60,5 +61,15 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "babel": {
+    "presets": [[
+      "env",
+      {
+        "targets": {
+          "node": "current"
+        }
+      }
+    ]]
   }
 }
