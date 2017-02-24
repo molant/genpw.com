@@ -1,4 +1,3 @@
-/* eslint-disable import/no-extraneous-dependencies */
 /* global ga */
 import Modernizr from 'modernizr';
 

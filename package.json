@@ -16,9 +16,9 @@
   },
   "scripts": {
     "build": "run-s lint clean build:*",
-    "build:css": "node-sass src/scss/style.scss dist/css/style.css",
-    "build:html": "pug -o dist -E html src/pug/*.pug",
-    "build:js": "webpack",
+    "build:css": "node-sass src/design/scss/style.scss dist/css/style.css",
+    "build:html": "pug -o dist -E html src/design/pug/*.pug",
+    "build:js": "webpack --config config/webpack.js",
     "clean": "rimraf dist firebase-debug.log npm-debug.log",
     "deploy": "run-s build deploy:firebase",
     "deploy:firebase": "firebase deploy",
