@@ -3,6 +3,8 @@ import Modernizr from 'modernizr';
 
 /**
  * See: http://youmightnotneedjquery.com/#ready
+ * @param {function} fn Function to call when document is ready.
+ * @returns {void}
  */
 export function ready(fn) {
   if (document.readyState !== 'loading') {
