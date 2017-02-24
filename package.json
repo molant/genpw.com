@@ -52,7 +52,7 @@
     "picnic": "6.3.2",
     "pug": "2.0.0-beta9",
     "pug-cli": "1.0.0-alpha6",
-    "rimraf": "2.6.0",
+    "rimraf": "2.6.1",
     "umbrellajs": "2.6.7",
     "webpack": "1.13.3"
   },
