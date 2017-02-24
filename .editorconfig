@@ -1,8 +1,5 @@
 # EditorConfig is awesome: http://EditorConfig.org
 
-# top-most EditorConfig file
-root = true
-
 # Unix-style newlines with a newline ending every file
 # Set default charset
 # Use 2 space indentation by defualt
