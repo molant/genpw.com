@@ -5,7 +5,7 @@ module.exports = {
   ],
   "rules": {
     "complexity": [2, 6],
-    "valid-jsdoc": ["error"]
+    "valid-jsdoc": ["error"],
   },
   "env": {
     "browser": true
