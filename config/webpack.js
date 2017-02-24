@@ -24,14 +24,14 @@ module.exports = {
         },
       },
       {
-        test: /\.modernizrrc.js$/,
+        test: /modernizr.js$/,
         loader: 'modernizr',
       },
     ],
   },
   resolve: {
     alias: {
-      modernizr$: path.resolve(__dirname, './.modernizrrc'),
+      modernizr$: path.resolve(__dirname, './modernizr.js'),
     },
   },
 };
