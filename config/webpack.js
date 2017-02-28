@@ -1,31 +1,39 @@
-const path = require('path');
+import minimist from 'minimist';
+import path from 'path';
+import webpack from 'webpack';
+import merge from 'webpack-merge';
 
-module.exports = {
+const argv = minimist(process.argv);
+
+const config = {
   entry: './src/design/js/main.js',
   output: {
-    path: './dist/js',
+    path: 'dist/js',
     filename: 'main.js',
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.js$/,
         exclude: /node_modules|bower_components/,
-        loader: 'babel',
-        query: {
-          presets: [[
-            'env',
-            {
-              targets: {
-                browsers: ['last 2 versions', 'safari >= 7'],
+        use: [{
+          loader: 'babel-loader',
+          options: {
+            presets: [[
+              'env',
+              {
+                modules: false,
+                targets: {
+                  browsers: ['last 2 versions', 'safari >= 7'],
+                },
               },
-            },
-          ]],
-        },
+            ]],
+          },
+        }],
       },
       {
         test: /modernizr.js$/,
-        loader: 'modernizr',
+        use: ['modernizr-loader'],
       },
     ],
   },
@@ -35,3 +43,28 @@ module.exports = {
     },
   },
 };
+
+let production = {};
+if (argv.production) {
+  production = {
+    plugins: [
+      new webpack.LoaderOptionsPlugin({
+        minimize: true,
+        debug: false,
+      }),
+      new webpack.optimize.UglifyJsPlugin({
+        beautify: false,
+        mangle: {
+          screw_ie8: true,
+          keep_fnames: true,
+        },
+        compress: {
+          screw_ie8: true,
+        },
+        comments: false,
+      }),
+    ],
+  };
+}
+
+export default merge(config, production);
