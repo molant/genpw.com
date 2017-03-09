@@ -34,7 +34,7 @@
     "eslint": "3.16.1",
     "eslint-config-airbnb-base": "11.1.0",
     "eslint-plugin-import": "2.2.0",
-    "firebase-tools": "3.4.0",
+    "firebase-tools": "3.5.0",
     "genpw": "1.0.7",
     "metalsmith": "2.3.0",
     "metalsmith-layouts": "1.8.0",
