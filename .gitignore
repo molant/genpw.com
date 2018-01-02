@@ -4,6 +4,11 @@
 # Logs
 /firebase-debug.log
 /npm-debug.log*
+/yarn-error.log
 
 # Output
 /dist/
+
+# Sonarwhal
+/cdp.pid
+/sonarwhal.scan
