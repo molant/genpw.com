@@ -1,30 +1,73 @@
 {
   "name": "genpw.com",
-  "description": "Website for genpw",
   "version": "1.0.0",
+  "private": true,
+  "description": "Website for genpw",
   "homepage": "https://genpw.com",
+  "bugs": {
+    "url": "https://github.com/genpw/genpw.com/issues"
+  },
+  "license": "MIT",
   "author": "Matthew Miller <matthew@mi11er.net> (https://mi11er.net)",
   "contributors": [],
-  "license": "MIT",
-  "private": true,
   "repository": {
     "type": "git",
     "url": "https://github.com/genpw/genpw.com.git"
-  },
-  "bugs": {
-    "url": "https://github.com/genpw/genpw.com/issues"
   },
   "scripts": {
     "build": "babel-node lib/build.js --buildOnly",
     "clean": "rimraf dist firebase-debug.log npm-debug.log",
     "deploy": "run-s lint clean 'build -- --production' deploy:firebase",
-    "deploy:firebase": "firebase deploy",
     "postdeploy": "sonarwhal https://genpw.com >sonarwhal.scan",
-    "lint": "eslint --ignore-path .gitignore  .",
-    "lint:fix": "run-s 'lint -- --fix'",
+    "deploy:firebase": "firebase deploy",
+    "lint": "run-s lint:*",
+    "lint:js": "eslint  --fix --ignore-path .gitignore  .",
+    "lint:package.json": "sort-package-json",
     "start": "babel-node lib/build.js"
   },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "node": "current"
+          }
+        }
+      ]
+    ]
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true
+    },
+    "extends": "airbnb-base",
+    "plugins": [
+      "import"
+    ],
+    "rules": {
+      "complexity": [
+        2,
+        6
+      ],
+      "valid-jsdoc": [
+        "error"
+      ],
+      "import/no-extraneous-dependencies": [
+        2,
+        {
+          "devDependencies": true
+        }
+      ]
+    }
+  },
   "dependencies": {
+    "sort-package-json": "^1.7.1"
   },
   "devDependencies": {
     "babel-cli": "6.24.1",
@@ -56,46 +99,5 @@
     "umbrellajs": "2.7.0",
     "webpack": "2.6.0",
     "webpack-merge": "4.1.0"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
-  },
-  "babel": {
-    "presets": [
-      [
-        "env",
-        {
-          "targets": {
-            "node": "current"
-          }
-        }
-      ]
-    ]
-  },
-  "eslintConfig": {
-    "extends": "airbnb-base",
-    "plugins": [
-      "import"
-    ],
-    "rules": {
-      "complexity": [
-        2,
-        6
-      ],
-      "valid-jsdoc": [
-        "error"
-      ],
-      "import/no-extraneous-dependencies": [
-        2,
-        {
-          "devDependencies": true
-        }
-      ]
-    },
-    "env": {
-      "browser": true
-    }
   }
 }
