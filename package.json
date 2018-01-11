@@ -2,58 +2,100 @@
   "name": "genpw.com",
   "description": "Website for genpw",
   "version": "1.0.0",
-  "private": true,
   "homepage": "https://genpw.com",
-  "author": "Matthew <matthew@mi11er.net> (https://mi11er.net)",
+  "author": "Matthew Miller <matthew@mi11er.net> (https://mi11er.net)",
+  "contributors": [],
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/genpw/genpw.com/issues"
-  },
+  "private": true,
   "repository": {
     "type": "git",
     "url": "https://github.com/genpw/genpw.com.git"
   },
+  "bugs": {
+    "url": "https://github.com/genpw/genpw.com/issues"
+  },
   "scripts": {
-    "build": "run-s lint clean build:*",
-    "build:css": "node-sass src/scss/style.scss dist/css/style.css",
-    "build:html": "pug -o dist -E html src/pug/*.pug",
-    "build:js": "webpack",
+    "build": "babel-node lib/build.js --buildOnly",
     "clean": "rimraf dist firebase-debug.log npm-debug.log",
-    "deploy": "run-s build deploy:firebase",
+    "deploy": "run-s lint clean 'build -- --production' deploy:firebase",
     "deploy:firebase": "firebase deploy",
-    "lint": "eslint .",
+    "postdeploy": "sonarwhal https://genpw.com >sonarwhal.scan",
+    "lint": "eslint --ignore-path .gitignore  .",
     "lint:fix": "run-s 'lint -- --fix'",
-    "start": "run-p watch start:*",
-    "start:browsersync": "browser-sync start --proxy 'localhost:5000' --files dist/",
-    "start:firebase": "firebase serve",
-    "watch": "run-p watch:*",
-    "watch:css": "run-s 'build:css -- -r -w src/scss'",
-    "watch:html": "run-s 'build:html -- -w'",
-    "watch:js": "run-s 'build:js -- -w'"
+    "start": "babel-node lib/build.js"
   },
   "dependencies": {
-    "genpw": "1.0.7",
-    "picnic": "6.3.0",
-    "umbrellajs": "2.6.7"
   },
   "devDependencies": {
-    "babel-loader": "^6.2.7",
-    "babel-preset-es2015": "^6.18.0",
-    "babel-register": "^6.18.0",
-    "browser-sync": "^2.18.3",
-    "eslint": "^3.11.1",
-    "eslint-config-airbnb": "^13.0.0",
-    "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-jsx-a11y": "^2.2.3",
-    "eslint-plugin-react": "^6.8.0",
-    "firebase-tools": "^3.2.1",
-    "modernizr": "^3.3.1",
-    "modernizr-loader": "1.0.0",
-    "node-sass": "^4.1.1",
-    "npm-run-all": "^4.0.0",
-    "pug": "^2.0.0-beta6",
-    "pug-cli": "^1.0.0-alpha6",
-    "rimraf": "^2.5.4",
-    "webpack": "^1.13.3"
+    "babel-cli": "6.24.1",
+    "babel-core": "6.24.1",
+    "babel-loader": "7.0.0",
+    "babel-preset-env": "1.5.1",
+    "browser-sync": "2.18.12",
+    "commitizen": "2.9.6",
+    "cz-conventional-changelog": "2.0.0",
+    "eslint": "3.19.0",
+    "eslint-config-airbnb-base": "11.2.0",
+    "eslint-plugin-import": "2.3.0",
+    "firebase-tools": "3.9.0",
+    "genpw": "1.0.7",
+    "metalsmith": "2.3.0",
+    "metalsmith-layouts": "1.8.1",
+    "metalsmith-sass": "1.4.0",
+    "minimist": "1.2.0",
+    "modernizr": "3.5.0",
+    "modernizr-loader": "1.0.1",
+    "node-sass": "4.5.3",
+    "npm-run-all": "4.0.2",
+    "picnic": "6.3.2",
+    "pug": "2.0.0-rc.1",
+    "pug-cli": "1.0.0-alpha6",
+    "queue": "4.2.1",
+    "rimraf": "2.6.1",
+    "sonarwhal": "^0.20.1",
+    "umbrellajs": "2.7.0",
+    "webpack": "2.6.0",
+    "webpack-merge": "4.1.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "node": "current"
+          }
+        }
+      ]
+    ]
+  },
+  "eslintConfig": {
+    "extends": "airbnb-base",
+    "plugins": [
+      "import"
+    ],
+    "rules": {
+      "complexity": [
+        2,
+        6
+      ],
+      "valid-jsdoc": [
+        "error"
+      ],
+      "import/no-extraneous-dependencies": [
+        2,
+        {
+          "devDependencies": true
+        }
+      ]
+    },
+    "env": {
+      "browser": true
+    }
   }
 }

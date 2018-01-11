@@ -1,4 +1,14 @@
-/dist/
-/firebase-debug.log
+# Dependency directories
 /node_modules/
-/npm-debug.log
+
+# Logs
+/firebase-debug.log
+/npm-debug.log*
+/yarn-error.log
+
+# Output
+/dist/
+
+# Sonarwhal
+/cdp.pid
+/sonarwhal.scan

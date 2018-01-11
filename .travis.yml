@@ -1,0 +1,18 @@
+# For more information about the configurations used
+# in this file, please see the Travis CI documentation.
+#
+# https://docs.travis-ci.com
+
+language: node_js
+
+node_js:
+  - node
+
+notifications:
+  email:
+    on_failure: always
+    on_success: never
+
+before_install: yarn global add greenkeeper-lockfile@1
+before_script: greenkeeper-lockfile-update
+after_script: greenkeeper-lockfile-upload
