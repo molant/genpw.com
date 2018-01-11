@@ -23,7 +23,8 @@
     "lint": "run-s lint:*",
     "lint:js": "eslint  --fix --ignore-path .gitignore  .",
     "lint:package.json": "sort-package-json",
-    "start": "babel-node lib/build.js"
+    "start": "babel-node lib/build.js",
+    "test": "run-s lint clean build"
   },
   "config": {
     "commitizen": {

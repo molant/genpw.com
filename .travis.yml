@@ -8,11 +8,20 @@ language: node_js
 node_js:
   - node
 
+cache:
+  yarn: true
+  directories:
+  - node_modules
+
 notifications:
   email:
     on_failure: always
     on_success: never
 
-before_install: yarn global add greenkeeper-lockfile@1
+before_install:
+  - yarn config set progress=false
+  - yarn global add greenkeeper-lockfile@1
+
 before_script: greenkeeper-lockfile-update
+
 after_script: greenkeeper-lockfile-upload

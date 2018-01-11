@@ -8,7 +8,7 @@ const argv = minimist(process.argv);
 const config = {
   entry: './src/design/js/main.js',
   output: {
-    path: 'dist/js',
+    path: path.resolve(__dirname, '../dist/js'),
     filename: 'main.js',
   },
   module: {
