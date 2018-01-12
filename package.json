@@ -96,7 +96,7 @@
     "pug-cli": "1.0.0-alpha6",
     "queue": "4.2.1",
     "rimraf": "2.6.1",
-    "sonarwhal": "^0.20.1",
+    "sonarwhal": "^0.22.1",
     "umbrellajs": "2.7.0",
     "webpack": "2.6.0",
     "webpack-merge": "4.1.0"
