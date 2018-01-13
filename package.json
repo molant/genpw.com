@@ -24,7 +24,6 @@
     "lint:js": "eslint  --fix --ignore-path .gitignore  .",
     "lint:package.json": "sort-package-json",
     "release": "standard-version",
-    "postcommit": "git push --follow-tags origin master",
     "start": "babel-node lib/build.js",
     "test": "run-s lint clean build"
   },
@@ -102,5 +101,10 @@
     "umbrellajs": "2.7.0",
     "webpack": "2.6.0",
     "webpack-merge": "4.1.0"
+  },
+  "standard-version": {
+    "scripts": {
+      "postcommit": "git push --follow-tags origin master"
+    }
   }
 }
