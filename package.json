@@ -1,6 +1,6 @@
 {
   "name": "genpw.com",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "private": true,
   "description": "Website for genpw",
   "homepage": "https://genpw.com",
@@ -104,7 +104,7 @@
   },
   "standard-version": {
     "scripts": {
-      "postcommit": "git push --follow-tags origin master"
+      "posttag": "git push --follow-tags origin master"
     }
   }
 }
