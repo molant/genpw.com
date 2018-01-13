@@ -14,16 +14,11 @@ before_install:
 - yarn global add greenkeeper-lockfile@1
 before_script: greenkeeper-lockfile-update
 after_script: greenkeeper-lockfile-upload
-before_deploy:
-  # Set up git user name and tag this commit
-  - git config --local user.name "Travis CI"
-  - git config --local user.email "travis@travis-ci.org"
-  - npm run release -s
 deploy:
   provider: releases
   api_key:
     secure: FCm/333/ohaqSQk7aBfqsJLP0eIgYzYQHft6i3cJaL6WCqihcuunwAS72X164b0z/L0sJ4GFPboGmZ2Lud/bmR3MLtg633zKrukwqlg5B1OoHM/oOLSJF2U7a1k8vefe4mWBb2MY/8aH2NiOokZtspIZoMH19eLMgiCJ8tExzqSsWVdDGbpckhYRgv7tCK55Zp1Z847tHAR8cbzvQVuWWv3Cy2foWjy5FHADLwJNY6X54TaHZka4LMc0kYevnupbngOnfY0u05xDEn+vWgppex30SLZXipUdcS56gegvvgexONvQv5I6E+Td4QZdOF59iCp1FRqt3wvxdoJznv+zFG1KcrIVBa5ffanAQu54PRUAJrc5kLNaxwnEKUe2SKFOCRfRDpn8xXSdEu3z1v7NIJK8frFLA2SFCp++SWN1BJC+R2QhNz2rd8ENoJCl/TtmaSuEk8uN6CLs37MjpEhosER+5+Lroy2ZCRnCdcHtTagkKuNVSJSlzD++quqQIZy+oTro6IZi46HXe3+qWvq/ZOVnkGfC8OtlowvKrQq4xkdPyL95thXrWHlQ/NlLCZ5YJgYCmUMkxW8a3X3asrQkvyuS2MWUgz9NMOcMWeeWtj2kg0l4L4eFwbC34/FePDp2y0o8y32j39mI0rZ849FdZXS2yLE7GwuuMt49ditiIJ8=
   skip_cleanup: true
   on:
+    tags: true
     repo: genpw/genpw.com
-    branch: master
