@@ -68,7 +68,9 @@
       ]
     }
   },
-  "dependencies": {},
+  "dependencies": {
+    "jstransformer-pug": "^0.3.0"
+  },
   "devDependencies": {
     "babel-cli": "6.24.1",
     "babel-core": "6.24.1",
@@ -83,7 +85,7 @@
     "firebase-tools": "3.9.0",
     "genpw": "1.0.7",
     "metalsmith": "2.3.0",
-    "metalsmith-layouts": "1.8.1",
+    "metalsmith-layouts": "2.0.0",
     "metalsmith-sass": "1.4.0",
     "minimist": "1.2.0",
     "modernizr": "3.5.0",
