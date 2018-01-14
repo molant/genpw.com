@@ -32,6 +32,7 @@ deploy:
     token:
       secure: VuEc07somgxhxsYh9xNM1CFWnUKva1T00yi7YYuf7CeSJxrjyPk7Qm8/uiMk1eHVGkJdhAjV3XV8pNJEWnKKsSkVVDHVLaWurg9L2BiMwh8V4Xjub+EcKTg3tGV/We4mKOLkvjFtqE+RTJ/gH5+fjB3SedSuQmhkjW1W3ktpoiSZxJfmyKMLn58PLnEG8izVT+6ClhRw3fc/qIjRJabcPI0QBEDhp+tN7pPoyDaz+EnCvbPIlXViZdZVMyXzEamtXa6pyO46GiRRUWw5KaZDR4ISvAZKNCw+eDC1DqX2i3aeljUhMAvRV1zrHHC6H4LjdshxcYIE+3cLlKlYlgNzJ+nO+HYCDHruSA2HBKGJrnpH9U/XGWTh3HFXt27bvD5W2eh8b0VxMZhpQis4JcqgZg7kXgM0zJhSrmgG2bUkplacz6j49zbhQVCX/4mcCEfkeggOJflNsUDCctTXIpZCoK3K6wzbk9qOYw4daPMRpxGw9OrpkIF0ivNQQEfHx2JyJCJ1N5ziFL26vy2ZcMb2HMOf1f63z6QlHJzaU8GnzB0hhMSEGcuVVWfGuLehIxNvWCYAqEzGNXPAVWRcuKVY1KXWzxIedlC/4OkSPHGETW4/mHMmrLN5Q8wzF29tDvfMNRlq1/DxPV00yCVfKFeYxyBw3h4gtWbDI0qiWRBP2RA=
     message: 'A Message'
+    skip_cleanup: true
     on:
       tags: true
       repo: genpw/genpw.com
