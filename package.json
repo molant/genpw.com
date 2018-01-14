@@ -23,7 +23,7 @@
     "lint": "run-s lint:*",
     "lint:js": "eslint  --fix --ignore-path .gitignore  .",
     "lint:package.json": "sort-package-json",
-    "release": "standard-version",
+    "release": "standard-version -s",
     "start": "babel-node lib/build.js",
     "test": "run-s lint clean build"
   },
