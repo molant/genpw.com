@@ -101,7 +101,7 @@
     "sort-package-json": "1.7.1",
     "standard-version": "4.3.0",
     "umbrellajs": "2.10.1",
-    "webpack": "2.6.0",
+    "webpack": "3.10.0",
     "webpack-merge": "4.1.1"
   },
   "standard-version": {
