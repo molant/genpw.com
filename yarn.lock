@@ -2515,6 +2515,10 @@ debug@^3.1.0:
   dependencies:
     ms "2.0.0"
 
+debug@~0.7.4:
+  version "0.7.4"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-0.7.4.tgz#06e1ea8082c2cb14e39806e22e2f6f757f92af39"
+
 decamelize@^1.0.0, decamelize@^1.1.1, decamelize@^1.1.2:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/decamelize/-/decamelize-1.2.0.tgz#f6534d15148269b20352e7bee26f501f9a191290"
@@ -5065,7 +5069,7 @@ jsprim@^1.2.2:
     json-schema "0.2.3"
     verror "1.3.6"
 
-jstransformer-pug@^0.3.0:
+jstransformer-pug@0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/jstransformer-pug/-/jstransformer-pug-0.3.0.tgz#13544eb0174d1bf168799ae4aff9f102a1dcbcb3"
   dependencies:
@@ -5438,6 +5442,10 @@ map-stream@~0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/map-stream/-/map-stream-0.1.0.tgz#e56aa94c4c8055a16404a0674b78f215f7c8e194"
 
+marked@~0.3.9:
+  version "0.3.12"
+  resolved "https://registry.yarnpkg.com/marked/-/marked-0.3.12.tgz#7cf25ff2252632f3fe2406bde258e94eee927519"
+
 media-typer@0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/media-typer/-/media-typer-0.3.0.tgz#8710d7af0aa626f8fffa1ce00168545263255748"
@@ -5486,6 +5494,13 @@ metalsmith-layouts@2.0.0:
     is-utf8 "^0.2.1"
     jstransformer "^1.0.0"
     multimatch "^2.1.0"
+
+metalsmith-markdown@0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/metalsmith-markdown/-/metalsmith-markdown-0.2.2.tgz#f863b7c9c0b2cd5bf034ee0899b0e5a8cde1ebd3"
+  dependencies:
+    debug "~0.7.4"
+    marked "~0.3.9"
 
 metalsmith-sass@1.4.0:
   version "1.4.0"
