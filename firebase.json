@@ -37,6 +37,10 @@
           {
             "key": "Cache-Control",
             "value": "max-age=180"
+          },
+          {
+            "key": "X-UA-Compatible",
+            "value": "ie=edge"
           }
         ]
       },
@@ -66,6 +70,10 @@
           {
             "key": "Cache-Control",
             "value": "max-age=180"
+          },
+          {
+            "key": "X-UA-Compatible",
+            "value": "ie=edge"
           }
         ]
       }
