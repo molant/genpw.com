@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.0.17"></a>
+## [1.0.17](https://github.com/genpw/genpw.com/compare/v1.0.16...v1.0.17) (2018-01-16)
+
+
+### Bug Fixes
+
+* **firebase:** sonarwhal: fix (highest-available-document-mode)/ ([266b6db](https://github.com/genpw/genpw.com/commit/266b6db))
+* **firebase:** sonarwhal: update google-analytics ignore url ([169350a](https://github.com/genpw/genpw.com/commit/169350a))
+
+
+
 <a name="1.0.16"></a>
 ## [1.0.16](https://github.com/genpw/genpw.com/compare/v1.0.15...v1.0.16) (2018-01-16)
 
