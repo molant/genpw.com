@@ -10,7 +10,7 @@
         "codeframe"
     ],
     "ignoredUrls": [{
-      "domain": "www\\.google-analytics\\.com/analytics\\.js",
+      "domain": "https://www\\.google-analytics\\.com/.*",
       "rules": ["*"]
     }],
     "rules": {
