@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.0.16"></a>
+## [1.0.16](https://github.com/genpw/genpw.com/compare/v1.0.15...v1.0.16) (2018-01-16)
+
+
+### Bug Fixes
+
+* **favicon:** add a basic favicon ([c688478](https://github.com/genpw/genpw.com/commit/c688478))
+* **firebase:** sonarwhal: Error: 'content-security-policy', 'x-frame-options', 'x-xss-protection' he ([c2b03c3](https://github.com/genpw/genpw.com/commit/c2b03c3))
+* **template:** sonarwhal: Error: Charset meta tag should be the first thing in '<head>' (meta-charse ([cac4ff4](https://github.com/genpw/genpw.com/commit/cac4ff4))
+
+
+
 <a name="1.0.15"></a>
 ## [1.0.15](https://github.com/genpw/genpw.com/compare/v1.0.14...v1.0.15) (2018-01-15)
 
