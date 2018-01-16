@@ -3,9 +3,10 @@
 // colors
 $black: #333;
 $white: #ddd;
+$genpw-blue: #032d72;
 
 body {
-  background: $black;
+  background: $genpw-blue;
 }
 
 .github-corner-container {
@@ -54,7 +55,7 @@ body {
   min-height: 300px;
   color: $white;
   padding: 1px 0;
-  background: $black;
+  background: $genpw-blue;
   background-size: cover;
 
   // Vertical center for the content
@@ -81,7 +82,7 @@ body {
   #theBestPassword {
     min-width: 300px;
     max-width: 30em;
-    color: $black;
+    color: $genpw-blue;
     margin-bottom: 0;
     text-align: center;
     border-radius: 0;
