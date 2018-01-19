@@ -70,6 +70,9 @@
   },
   "dependencies": {},
   "devDependencies": {
+    "@semantic-release/changelog": "1.0.0",
+    "@semantic-release/exec": "1.0.2",
+    "@semantic-release/git": "2.0.2",
     "babel-cli": "6.26.0",
     "babel-core": "6.26.0",
     "babel-loader": "7.1.2",
@@ -97,15 +100,12 @@
     "pug-cli": "1.0.0-alpha6",
     "queue": "4.4.2",
     "rimraf": "2.6.2",
+    "semantic-release": "12.2.2",
     "sonarwhal": "^0.23.0",
     "sort-package-json": "1.7.1",
     "umbrellajs": "2.10.1",
     "webpack": "3.10.0",
-    "webpack-merge": "4.1.1",
-    "@semantic-release/changelog": "1.0.0",
-    "@semantic-release/exec": "1.0.2",
-    "@semantic-release/git": "2.0.2",
-    "semantic-release": "12.2.2"
+    "webpack-merge": "4.1.1"
   },
   "release": {
     "branch": "master",
@@ -113,6 +113,9 @@
       "@semantic-release/changelog",
       "@semantic-release/git",
       "@semantic-release/github"
+    ],
+    "getLastRelease": [
+      "@semantic-release/git"
     ],
     "publish": [
       "@semantic-release/changelog",
