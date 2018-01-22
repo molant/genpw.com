@@ -80,7 +80,7 @@
     "browser-sync": "2.23.5",
     "commitizen": "2.9.6",
     "cz-conventional-changelog": "2.1.0",
-    "eslint": "4.15.0",
+    "eslint": "4.16.0",
     "eslint-config-airbnb-base": "12.1.0",
     "eslint-plugin-import": "2.8.0",
     "firebase-tools": "3.17.2",
