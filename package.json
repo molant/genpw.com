@@ -16,7 +16,7 @@
   },
   "scripts": {
     "build": "babel-node lib/build.js --buildOnly",
-    "clean": "rimraf dist firebase-debug.log npm-debug.log",
+    "clean": "rimraf dist firebase-debug.log npm-debug.log yarn-error.log",
     "deploy": "run-s lint clean 'build -- --production' deploy:firebase",
     "postdeploy": "sonarwhal https://genpw.com >sonarwhal.scan",
     "deploy:firebase": "firebase deploy",
