@@ -68,7 +68,9 @@
       ]
     }
   },
-  "dependencies": {},
+  "dependencies": {
+    "genpw": "1.0.8"
+  },
   "devDependencies": {
     "@semantic-release/changelog": "1.0.0",
     "@semantic-release/exec": "1.0.2",
@@ -84,7 +86,6 @@
     "eslint-config-airbnb-base": "12.1.0",
     "eslint-plugin-import": "2.8.0",
     "firebase-tools": "3.17.4",
-    "genpw": "1.0.7",
     "jstransformer-pug": "0.3.0",
     "metalsmith": "2.3.0",
     "metalsmith-layouts": "2.1.0",
