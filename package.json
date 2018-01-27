@@ -101,7 +101,7 @@
     "pug-cli": "1.0.0-alpha6",
     "queue": "4.4.2",
     "rimraf": "2.6.2",
-    "semantic-release": "12.4.0",
+    "semantic-release": "13.0.1",
     "sonarwhal": "^0.24.0",
     "sort-package-json": "1.7.1",
     "umbrellajs": "2.10.1",
@@ -115,8 +115,6 @@
       "@semantic-release/git",
       "@semantic-release/github"
     ],
-    "getLastRelease":
-      "@semantic-release/git",
     "publish": [
       "@semantic-release/changelog",
       {
