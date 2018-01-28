@@ -69,7 +69,7 @@
     }
   },
   "dependencies": {
-    "genpw": "1.0.8"
+    "genpw": "1.0.9"
   },
   "devDependencies": {
     "@semantic-release/changelog": "1.0.0",

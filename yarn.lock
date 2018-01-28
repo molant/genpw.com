@@ -3858,9 +3858,9 @@ generate-object-property@^1.1.0:
   dependencies:
     is-property "^1.0.0"
 
-genpw@1.0.8:
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/genpw/-/genpw-1.0.8.tgz#7affc45ee499708dbb5f9d73a82f5abd1516f835"
+genpw@1.0.9:
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/genpw/-/genpw-1.0.9.tgz#290e6b34024285af0b6d5a09c6a4d5d5cfc2a26d"
   dependencies:
     sjcl "1.0.7"
 
