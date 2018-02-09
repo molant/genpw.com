@@ -1,0 +1,6 @@
+# Output is intentionally uglified
+/dist/
+
+# Let's lint these
+!/.prettierrc.js
+!/.eslintrc.js
