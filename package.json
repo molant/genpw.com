@@ -16,9 +16,7 @@
   },
   "scripts": {
     "prebuild": "run-p lint clean",
-    "build": "per-env",
-    "build:development": "babel-node lib/build.js --buildOnly",
-    "build:production": "babel-node lib/build.js --buildOnly --production",
+    "build": "preact build",
     "clean": "rimraf dist firebase-debug.log npm-debug.log yarn-error.log",
     "precommit": "run-s lint-staged pretty-quick nsp",
     "deploy": "per-env",
@@ -31,7 +29,9 @@
     "nsp": "nsp check",
     "semantic-release": "semantic-release",
     "start": "per-env",
-    "start:development": "babel-node lib/build.js",
+    "start:development": "preact watch",
+    "prestart:production": "run-s build",
+    "start:production": "preact serve",
     "pretty-quick": "pretty-quick --staged"
   },
   "config": {
