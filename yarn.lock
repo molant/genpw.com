@@ -109,9 +109,9 @@
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/@semantic-release/error/-/error-2.1.0.tgz#44771f676f5b148da309111285a97901aa95a6e0"
 
-"@semantic-release/exec@2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@semantic-release/exec/-/exec-2.0.0.tgz#09e4ec2d1ceb527f143fa39288d81b61f8478568"
+"@semantic-release/exec@2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@semantic-release/exec/-/exec-2.0.1.tgz#9c31cb8fee532b03bda99b000e4d3d37d6e11ecd"
   dependencies:
     "@semantic-release/error" "^2.1.0"
     debug "^3.1.0"
