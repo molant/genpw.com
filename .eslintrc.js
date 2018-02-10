@@ -12,5 +12,7 @@ module.exports = {
         devDependencies: true,
       },
     ],
+    'no-param-reassign': [ERROR, { props: false }],
+    'valid-jsdoc': [ERROR],
   },
 };

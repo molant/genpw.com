@@ -16,7 +16,9 @@
   },
   "scripts": {
     "prebuild": "run-p lint clean",
-    "build": "preact build",
+    "build": "per-env",
+    "build:development": "preact build --dest dist",
+    "build:production": "preact build --dest dist --production",
     "clean": "rimraf dist firebase-debug.log npm-debug.log yarn-error.log",
     "precommit": "run-s lint-staged pretty-quick nsp",
     "deploy": "per-env",
@@ -79,6 +81,7 @@
     "lint-staged": "7.0.4",
     "modernizr": "3.6.0",
     "modernizr-loader": "1.0.1",
+    "node-sass": "4.8.3",
     "npm-run-all": "4.1.2",
     "nsp": "3.2.1",
     "per-env": "1.0.2",
@@ -87,6 +90,7 @@
     "prettier": "1.12.0",
     "pretty-quick": "1.4.1",
     "rimraf": "2.6.2",
+    "sass-loader": "6.0.7",
     "semantic-release": "15.1.7",
     "sonarwhal": "1.6.0",
     "sort-package-json": "1.12.0"
@@ -106,7 +110,9 @@
       },
       {
         "path": "@semantic-release/git",
-        "assets": ["**"]
+        "assets": [
+          "**"
+        ]
       }
     ],
     "publish": [

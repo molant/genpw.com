@@ -1,4 +1,4 @@
-@import "../../../node_modules/picnic/src/picnic";
+@import '../../node_modules/picnic/src/picnic';
 
 // colors
 $black: #333;
@@ -10,37 +10,50 @@ body {
 }
 
 .github-corner-container {
-    position: fixed;
-    right: 0;
-    z-index: 10;
-    transition: all .3s;
+  position: fixed;
+  right: 0;
+  z-index: 10;
+  transition: all 0.3s;
 }
 
-.github-corner:hover .octo-arm{
-  animation:octocat-wave 560ms ease-in-out
+.github-corner:hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out;
 }
-.github-corner{
-  svg{
-    fill:#fff;
-    color:#151513;
+.github-corner {
+  svg {
+    fill: #fff;
+    color: #151513;
     position: absolute;
     top: 0;
     border: 0;
     right: 0;
   }
-  .octo-arm{
+  .octo-arm {
     transform-origin: 130px 106px;
   }
 }
 
-@keyframes octocat-wave{
-  0%,100%{transform:rotate(0)}
-  20%,60%{transform:rotate(-25deg)}
-  40%,80%{transform:rotate(10deg)}
+@keyframes octocat-wave {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  20%,
+  60% {
+    transform: rotate(-25deg);
+  }
+  40%,
+  80% {
+    transform: rotate(10deg);
+  }
 }
-@media (max-width:500px){
-  .github-corner:hover .octo-arm{animation:none}
-  .github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}
+@media (max-width: 500px) {
+  .github-corner:hover .octo-arm {
+    animation: none;
+  }
+  .github-corner .octo-arm {
+    animation: octocat-wave 560ms ease-in-out;
+  }
 }
 
 .hero {
@@ -86,7 +99,7 @@ body {
     margin-bottom: 0;
     text-align: center;
     border-radius: 0;
-    margin: 1.3em auto .3em;
+    margin: 1.3em auto 0.3em;
     padding: 0.3em 0.6em;
     background: #f5f5f5;
     font-family: monospace, monospace;
@@ -94,8 +107,14 @@ body {
   }
 
   @keyframes bounce {
-    from { bottom: 20px; }
-    70% { bottom: 10px; }
-    to { bottom: 20px; }
+    from {
+      bottom: 20px;
+    }
+    70% {
+      bottom: 10px;
+    }
+    to {
+      bottom: 20px;
+    }
   }
 }
