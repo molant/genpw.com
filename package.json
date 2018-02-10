@@ -72,7 +72,7 @@
     "genpw": "1.0.9"
   },
   "devDependencies": {
-    "@semantic-release/changelog": "1.0.0",
+    "@semantic-release/changelog": "1.0.1",
     "@semantic-release/exec": "2.0.1",
     "@semantic-release/git": "3.0.1",
     "babel-cli": "6.26.0",
