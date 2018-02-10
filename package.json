@@ -105,7 +105,7 @@
     "sonarwhal": "^0.25.0",
     "sort-package-json": "1.7.1",
     "umbrellajs": "2.10.1",
-    "webpack": "3.10.0",
+    "webpack": "3.11.0",
     "webpack-merge": "4.1.1"
   },
   "release": {
