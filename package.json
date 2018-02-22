@@ -106,7 +106,7 @@
     "sort-package-json": "1.8.0",
     "umbrellajs": "2.10.1",
     "webpack": "3.11.0",
-    "webpack-merge": "4.1.1"
+    "webpack-merge": "4.1.2"
   },
   "release": {
     "branch": "master",
