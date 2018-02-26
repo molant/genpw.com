@@ -4,9 +4,8 @@ module.exports = {
   env: {
     browser: true,
   },
-  extends: ['airbnb-base', 'prettier'],
+  extends: ['@mi11er'],
   rules: {
-    'valid-jsdoc': [ERROR],
     'import/no-extraneous-dependencies': [
       ERROR,
       {
