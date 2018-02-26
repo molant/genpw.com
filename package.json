@@ -17,15 +17,16 @@
   "scripts": {
     "build": "babel-node lib/build.js --buildOnly",
     "clean": "rimraf dist firebase-debug.log npm-debug.log yarn-error.log",
+    "precommit": "run-s lint-staged pretty-quick",
     "deploy": "run-s lint clean 'build -- --production' deploy:firebase",
     "postdeploy": "sonarwhal https://genpw.com >sonarwhal.scan",
     "deploy:firebase": "firebase deploy",
-    "lint": "run-s lint:*",
-    "lint:js": "eslint --fix .",
-    "lint:package.json": "sort-package-json",
+    "lint": "eslint --fix .",
+    "lint-staged": "lint-staged",
     "semantic-release": "semantic-release",
     "start": "babel-node lib/build.js",
-    "test": "run-s lint clean build"
+    "test": "run-s lint clean build",
+    "pretty-quick": "pretty-quick --staged"
   },
   "config": {
     "commitizen": {
@@ -60,9 +61,12 @@
     "cz-conventional-changelog": "2.1.0",
     "eslint": "4.18.1",
     "eslint-config-airbnb-base": "12.1.0",
+    "eslint-config-prettier": "2.9.0",
     "eslint-plugin-import": "2.9.0",
     "firebase-tools": "3.17.4",
+    "husky": "0.14.3",
     "jstransformer-pug": "0.3.0",
+    "lint-staged": "7.0.0",
     "metalsmith": "2.3.0",
     "metalsmith-layouts": "2.1.0",
     "metalsmith-markdown": "0.2.2",
@@ -73,6 +77,8 @@
     "node-sass": "4.7.2",
     "npm-run-all": "4.1.2",
     "picnic": "6.5.0",
+    "prettier": "1.10.2",
+    "pretty-quick": "1.4.1",
     "pug": "2.0.0-rc.4",
     "pug-cli": "1.0.0-alpha6",
     "queue": "4.4.2",
@@ -99,10 +105,7 @@
       },
       {
         "path": "@semantic-release/git",
-        "assets": [
-          "package.json",
-          "CHANGELOG.md"
-        ]
+        "assets": ["package.json", "CHANGELOG.md"]
       },
       {
         "path": "@semantic-release/exec",
