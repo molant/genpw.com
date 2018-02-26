@@ -21,7 +21,7 @@
     "postdeploy": "sonarwhal https://genpw.com >sonarwhal.scan",
     "deploy:firebase": "firebase deploy",
     "lint": "run-s lint:*",
-    "lint:js": "eslint  --fix --ignore-path .gitignore  .",
+    "lint:js": "eslint --fix .",
     "lint:package.json": "sort-package-json",
     "semantic-release": "semantic-release",
     "start": "babel-node lib/build.js",
@@ -43,30 +43,6 @@
         }
       ]
     ]
-  },
-  "eslintConfig": {
-    "env": {
-      "browser": true
-    },
-    "extends": "airbnb-base",
-    "plugins": [
-      "import"
-    ],
-    "rules": {
-      "complexity": [
-        2,
-        6
-      ],
-      "valid-jsdoc": [
-        "error"
-      ],
-      "import/no-extraneous-dependencies": [
-        2,
-        {
-          "devDependencies": true
-        }
-      ]
-    }
   },
   "dependencies": {
     "genpw": "1.0.9"
