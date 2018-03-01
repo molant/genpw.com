@@ -1,4 +1,4 @@
-import { PasswordGenerator } from 'genpw';
+import PasswordGenerator from 'genpw';
 import { u } from 'umbrellajs';
 import { ready, googleAnalytics } from './miscfunctions';
 
