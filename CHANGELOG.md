@@ -1,3 +1,11 @@
+<a name="1.0.18"></a>
+## [1.0.18](https://github.com/genpw/genpw.com/compare/v1.0.17...v1.0.18) (2018-03-01)
+
+
+### Bug Fixes
+
+* **package:** update genpw to version 2.0.0 ([0de487c](https://github.com/genpw/genpw.com/commit/0de487c))
+
 # Change Log
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
