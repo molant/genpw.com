@@ -1,3 +1,11 @@
+<a name="1.0.19"></a>
+## [1.0.19](https://github.com/genpw/genpw.com/compare/v1.0.18...v1.0.19) (2018-03-04)
+
+
+### Bug Fixes
+
+* **package:** update genpw to version 2.0.1 ([14b5c93](https://github.com/genpw/genpw.com/commit/14b5c93))
+
 <a name="1.0.18"></a>
 ## [1.0.18](https://github.com/genpw/genpw.com/compare/v1.0.17...v1.0.18) (2018-03-01)
 
