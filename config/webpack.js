@@ -2,6 +2,7 @@ import minimist from 'minimist';
 import path from 'path';
 import webpack from 'webpack';
 import merge from 'webpack-merge';
+import UglifyJsPlugin from 'uglifyjs-webpack-plugin';
 
 const argv = minimist(process.argv);
 
@@ -16,20 +17,24 @@ const config = {
       {
         test: /\.js$/,
         exclude: /node_modules|bower_components/,
-        use: [{
-          loader: 'babel-loader',
-          options: {
-            presets: [[
-              'env',
-              {
-                modules: false,
-                targets: {
-                  browsers: ['last 2 versions', 'safari >= 7'],
-                },
-              },
-            ]],
+        use: [
+          {
+            loader: 'babel-loader',
+            options: {
+              presets: [
+                [
+                  'env',
+                  {
+                    modules: false,
+                    targets: {
+                      browsers: ['last 2 versions', 'safari >= 7'],
+                    },
+                  },
+                ],
+              ],
+            },
           },
-        }],
+        ],
       },
       {
         test: /modernizr.js$/,
@@ -52,16 +57,18 @@ if (argv.production) {
         minimize: true,
         debug: false,
       }),
-      new webpack.optimize.UglifyJsPlugin({
-        beautify: false,
-        mangle: {
-          screw_ie8: true,
-          keep_fnames: true,
+      new UglifyJsPlugin({
+        uglifyOptions: {
+          beautify: false,
+          mangle: {
+            screw_ie8: true,
+            keep_fnames: true,
+          },
+          compress: {
+            screw_ie8: true,
+          },
+          comments: false,
         },
-        compress: {
-          screw_ie8: true,
-        },
-        comments: false,
       }),
     ],
   };
