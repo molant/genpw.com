@@ -12,12 +12,9 @@ notifications:
     on_success: never
 before_install:
 - yarn config set progress=false
-- yarn global add greenkeeper-lockfile@1
 before_script:
-- greenkeeper-lockfile-update
 - export NODE_ENV=production
 script: yarn build
-after_script: greenkeeper-lockfile-upload
 before_deploy:
   - .travis/setup-git.sh > /dev/null 2>&1
 deploy:
