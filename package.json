@@ -111,7 +111,7 @@
       "@semantic-release/git",
       "@semantic-release/github"
     ],
-    "publish": [
+    "prepare": [
       "@semantic-release/changelog",
       {
         "path": "@semantic-release/exec",
@@ -120,10 +120,12 @@
       {
         "path": "@semantic-release/git",
         "assets": ["package.json", "CHANGELOG.md"]
-      },
+      }
+    ],
+    "publish": [
       {
         "path": "@semantic-release/exec",
-        "cmd": "npm run deploy:firebase"
+        "cmd": "firebase deploy"
       },
       {
         "path": "@semantic-release/github",

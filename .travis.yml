@@ -3,9 +3,6 @@ node_js:
 - node
 cache:
   yarn: true
-  directories:
-  - "${HOME}/.cache/yarn"
-  - node_modules
 notifications:
   email:
     on_failure: always
