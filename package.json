@@ -51,7 +51,7 @@
     ]
   },
   "dependencies": {
-    "genpw": "2.0.1",
+    "genpw": "2.0.2",
     "picnic": "6.5.0",
     "umbrellajs": "2.10.1"
   },
