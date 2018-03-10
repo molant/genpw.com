@@ -1,3 +1,11 @@
+<a name="1.0.21"></a>
+## [1.0.21](https://github.com/genpw/genpw.com/compare/v1.0.20...v1.0.21) (2018-03-10)
+
+
+### Bug Fixes
+
+* **build:** fix call to deploy executable ([40bc9de](https://github.com/genpw/genpw.com/commit/40bc9de))
+
 <a name="1.0.20"></a>
 ## [1.0.20](https://github.com/genpw/genpw.com/compare/v1.0.19...v1.0.20) (2018-03-10)
 
