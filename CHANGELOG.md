@@ -1,3 +1,11 @@
+<a name="1.0.20"></a>
+## [1.0.20](https://github.com/genpw/genpw.com/compare/v1.0.19...v1.0.20) (2018-03-10)
+
+
+### Bug Fixes
+
+* **deps:** update dependency genpw to v2.0.2 ([3a1fcf1](https://github.com/genpw/genpw.com/commit/3a1fcf1))
+
 <a name="1.0.19"></a>
 ## [1.0.19](https://github.com/genpw/genpw.com/compare/v1.0.18...v1.0.19) (2018-03-04)
 
