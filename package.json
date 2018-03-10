@@ -125,7 +125,7 @@
     "publish": [
       {
         "path": "@semantic-release/exec",
-        "cmd": "firebase deploy"
+        "cmd": "npx firebase deploy"
       },
       {
         "path": "@semantic-release/github",
