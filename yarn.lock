@@ -274,9 +274,9 @@
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.7.0.tgz#9a06f4f137ee84d7df0460c1fdb1135ffa6c50fd"
 
-"@sonarwhal/connector-edge@^0.1.4":
-  version "0.1.5"
-  resolved "https://registry.yarnpkg.com/@sonarwhal/connector-edge/-/connector-edge-0.1.5.tgz#df728d6fe4f70eed09605955f90e8e770df33f69"
+"@sonarwhal/connector-edge@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@sonarwhal/connector-edge/-/connector-edge-1.0.0.tgz#7e901a5d22e6a7ec59945796df7bcf22b27dc1ff"
   dependencies:
     edge-diagnostics-adapter "^0.6.0"
     node-windows "^0.1.14"
@@ -9516,9 +9516,9 @@ socks@^1.1.10:
     ip "^1.1.4"
     smart-buffer "^1.0.13"
 
-sonarwhal@1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/sonarwhal/-/sonarwhal-1.0.0.tgz#c6f22049d4807ecce92e3f2fc44713a949d2e3d3"
+sonarwhal@1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/sonarwhal/-/sonarwhal-1.0.3.tgz#b6e05210205748e55007ae03a269c7ec0a98943b"
   dependencies:
     browserslist "^3.1.2"
     canvas-prebuilt "^1.6.5-prerelease.1"
@@ -9559,7 +9559,7 @@ sonarwhal@1.0.0:
     text-table "^0.2.0"
     update-notifier "^2.3.0"
   optionalDependencies:
-    "@sonarwhal/connector-edge" "^0.1.4"
+    "@sonarwhal/connector-edge" "^1.0.0"
 
 sort-keys@^2.0.0:
   version "2.0.0"
