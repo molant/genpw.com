@@ -9516,10 +9516,11 @@ socks@^1.1.10:
     ip "^1.1.4"
     smart-buffer "^1.0.13"
 
-sonarwhal@1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/sonarwhal/-/sonarwhal-1.0.3.tgz#b6e05210205748e55007ae03a269c7ec0a98943b"
+sonarwhal@1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/sonarwhal/-/sonarwhal-1.0.4.tgz#d0857292a522664a48ec71a012aabf7390b8feb0"
   dependencies:
+    async "^2.6.0"
     browserslist "^3.1.2"
     canvas-prebuilt "^1.6.5-prerelease.1"
     chalk "^2.3.2"
