@@ -9562,9 +9562,9 @@ socks@^1.1.10:
     ip "^1.1.4"
     smart-buffer "^1.0.13"
 
-sonarwhal@1.0.5:
-  version "1.0.5"
-  resolved "https://registry.yarnpkg.com/sonarwhal/-/sonarwhal-1.0.5.tgz#e41f3a26eb7586e9991b6ddd81f6cc420f46507a"
+sonarwhal@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/sonarwhal/-/sonarwhal-1.1.0.tgz#5f3c6189483dc2e4f3a0b057b31440264335a11d"
   dependencies:
     async "^2.6.0"
     browserslist "^3.1.2"
