@@ -87,7 +87,7 @@
     "minimist": "1.2.0",
     "modernizr": "3.6.0",
     "modernizr-loader": "1.0.1",
-    "node-sass": "4.7.2",
+    "node-sass": "4.8.3",
     "npm-run-all": "4.1.2",
     "nsp": "3.2.1",
     "per-env": "1.0.2",
