@@ -101,7 +101,7 @@
     "sonarwhal": "1.4.0",
     "sort-package-json": "1.11.0",
     "uglifyjs-webpack-plugin": "1.2.4",
-    "webpack": "4.1.1",
+    "webpack": "4.5.0",
     "webpack-merge": "4.1.2"
   },
   "release": {
