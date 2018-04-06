@@ -3965,9 +3965,9 @@ findup-sync@0.4.2:
     micromatch "^2.3.7"
     resolve-dir "^0.1.0"
 
-firebase-tools@3.18.0:
-  version "3.18.0"
-  resolved "https://registry.yarnpkg.com/firebase-tools/-/firebase-tools-3.18.0.tgz#083628e47216ce78bec16fe2ea3f338c11dc4eea"
+firebase-tools@3.18.1:
+  version "3.18.1"
+  resolved "https://registry.yarnpkg.com/firebase-tools/-/firebase-tools-3.18.1.tgz#24513b5e2f0eeae0fd78c30e5df5e018963fe3cd"
   dependencies:
     JSONStream "^1.2.1"
     archiver "^2.1.1"
