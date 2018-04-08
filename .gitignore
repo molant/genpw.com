@@ -12,3 +12,6 @@
 # Sonarwhal
 /cdp.pid
 /sonarwhal.scan
+
+# Site Build
+/Site_Build.tgz
