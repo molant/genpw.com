@@ -51,7 +51,7 @@
     ]
   },
   "dependencies": {
-    "genpw": "2.0.2",
+    "genpw": "2.0.4",
     "picnic": "6.5.0",
     "umbrellajs": "2.10.1"
   },
@@ -119,7 +119,7 @@
       },
       {
         "path": "@semantic-release/git",
-        "assets": ["package.json", "CHANGELOG.md"]
+        "assets": ["**"]
       }
     ],
     "publish": [

@@ -281,9 +281,9 @@
     edge-diagnostics-adapter "^0.6.0"
     node-windows "^0.1.14"
 
-"@std/esm@0.25.2":
-  version "0.25.2"
-  resolved "https://registry.yarnpkg.com/@std/esm/-/esm-0.25.2.tgz#b71e1545764f96134935fd1cb5f3785e0cb19d15"
+"@std/esm@0.26.0":
+  version "0.26.0"
+  resolved "https://registry.yarnpkg.com/@std/esm/-/esm-0.26.0.tgz#c3ec3abdee95738e15ea7c695b7fee14ae529b81"
 
 "@types/core-js@^0.9.41":
   version "0.9.46"
@@ -4268,11 +4268,11 @@ generate-object-property@^1.1.0:
   dependencies:
     is-property "^1.0.0"
 
-genpw@2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/genpw/-/genpw-2.0.2.tgz#dada75f4df0e034ed0e069497b54c9f88018b63f"
+genpw@2.0.4:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/genpw/-/genpw-2.0.4.tgz#b1137f701b44a4d4c990328962b794dc85f031ed"
   dependencies:
-    "@std/esm" "0.25.2"
+    "@std/esm" "0.26.0"
     sjcl "1.0.7"
 
 get-caller-file@^1.0.1:
