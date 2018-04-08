@@ -61,11 +61,11 @@ if (argv.production) {
         uglifyOptions: {
           beautify: false,
           mangle: {
-            screw_ie8: true,
+            ie8: false,
             keep_fnames: true,
           },
           compress: {
-            screw_ie8: true,
+            ie8: false,
           },
           comments: false,
         },
