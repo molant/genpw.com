@@ -285,10 +285,6 @@
     edge-diagnostics-adapter "^0.6.0"
     node-windows "^0.1.14"
 
-"@std/esm@0.26.0":
-  version "0.26.0"
-  resolved "https://registry.yarnpkg.com/@std/esm/-/esm-0.26.0.tgz#c3ec3abdee95738e15ea7c695b7fee14ae529b81"
-
 "@types/babel-types@*", "@types/babel-types@^7.0.0":
   version "7.0.1"
   resolved "https://registry.yarnpkg.com/@types/babel-types/-/babel-types-7.0.1.tgz#1405e5396968c4302994b0161ce405b72b874257"
@@ -3378,6 +3374,10 @@ eslint@^3.7.1:
     text-table "~0.2.0"
     user-home "^2.0.0"
 
+esm@3.0.16:
+  version "3.0.16"
+  resolved "https://registry.yarnpkg.com/esm/-/esm-3.0.16.tgz#7874cc2f92694460029e66640a67a06f8e408930"
+
 espree@^3.4.0, espree@^3.5.4:
   version "3.5.4"
   resolved "https://registry.yarnpkg.com/espree/-/espree-3.5.4.tgz#b0f447187c8a8bed944b815a660bddf5deb5d1a7"
@@ -4152,11 +4152,11 @@ generate-object-property@^1.1.0:
   dependencies:
     is-property "^1.0.0"
 
-genpw@2.0.4:
-  version "2.0.4"
-  resolved "https://registry.yarnpkg.com/genpw/-/genpw-2.0.4.tgz#b1137f701b44a4d4c990328962b794dc85f031ed"
+genpw@2.0.5:
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/genpw/-/genpw-2.0.5.tgz#d4d1d125fb061da2ef95e9388918ee7361e33f0c"
   dependencies:
-    "@std/esm" "0.26.0"
+    esm "3.0.16"
     sjcl "1.0.7"
 
 get-caller-file@^1.0.1:
