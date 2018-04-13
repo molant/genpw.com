@@ -1,3 +1,11 @@
+<a name="1.0.24"></a>
+## [1.0.24](https://github.com/genpw/genpw.com/compare/v1.0.23...v1.0.24) (2018-04-13)
+
+
+### Bug Fixes
+
+* **deps:** update dependency genpw to v2.0.6 ([edafcd1](https://github.com/genpw/genpw.com/commit/edafcd1))
+
 <a name="1.0.23"></a>
 ## [1.0.23](https://github.com/genpw/genpw.com/compare/v1.0.22...v1.0.23) (2018-04-09)
 
