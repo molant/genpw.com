@@ -3386,9 +3386,9 @@ eslint@^3.7.1:
     text-table "~0.2.0"
     user-home "^2.0.0"
 
-esm@3.0.20:
-  version "3.0.20"
-  resolved "https://registry.yarnpkg.com/esm/-/esm-3.0.20.tgz#6659d3c3ed0342354e7f1eaf6204a01083781426"
+esm@3.0.22:
+  version "3.0.22"
+  resolved "https://registry.yarnpkg.com/esm/-/esm-3.0.22.tgz#1e10b620869ed107aa230af1b7c28e5268be67e2"
 
 espree@^3.4.0, espree@^3.5.4:
   version "3.5.4"
@@ -4164,11 +4164,11 @@ generate-object-property@^1.1.0:
   dependencies:
     is-property "^1.0.0"
 
-genpw@2.0.8:
-  version "2.0.8"
-  resolved "https://registry.yarnpkg.com/genpw/-/genpw-2.0.8.tgz#58ce4df8afd50265906077776b7d8f11e520e127"
+genpw@2.0.10:
+  version "2.0.10"
+  resolved "https://registry.yarnpkg.com/genpw/-/genpw-2.0.10.tgz#7a6d31cd872799f0b6581be3e31761c5c2b56127"
   dependencies:
-    esm "3.0.20"
+    esm "3.0.22"
     sjcl "1.0.7"
 
 get-caller-file@^1.0.1:
