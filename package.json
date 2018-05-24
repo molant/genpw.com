@@ -97,7 +97,7 @@
     "pug-cli": "1.0.0-alpha6",
     "queue": "4.4.2",
     "rimraf": "2.6.2",
-    "semantic-release": "15.4.1",
+    "semantic-release": "15.5.0",
     "sonarwhal": "1.9.1",
     "sort-package-json": "1.15.0",
     "uglifyjs-webpack-plugin": "1.2.5",
