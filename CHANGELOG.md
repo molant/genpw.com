@@ -1,3 +1,11 @@
+<a name="1.0.28"></a>
+## [1.0.28](https://github.com/genpw/genpw.com/compare/v1.0.27...v1.0.28) (2018-06-02)
+
+
+### Bug Fixes
+
+* **deps:** update dependency umbrellajs to v2.10.2 ([d6657c2](https://github.com/genpw/genpw.com/commit/d6657c2))
+
 <a name="1.0.27"></a>
 ## [1.0.27](https://github.com/genpw/genpw.com/compare/v1.0.26...v1.0.27) (2018-04-22)
 
