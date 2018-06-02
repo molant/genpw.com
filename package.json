@@ -53,7 +53,7 @@
   "dependencies": {
     "genpw": "2.0.10",
     "picnic": "6.5.0",
-    "umbrellajs": "2.10.1"
+    "umbrellajs": "2.10.2"
   },
   "devDependencies": {
     "@mi11er/eslint-config": "2.2.2",
