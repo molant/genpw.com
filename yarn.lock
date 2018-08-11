@@ -10386,9 +10386,9 @@ ultron@~1.1.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/ultron/-/ultron-1.1.1.tgz#9fe1536a10a664a65266a1e3ccf85fd36302bc9c"
 
-umbrellajs@2.10.2:
-  version "2.10.2"
-  resolved "https://registry.yarnpkg.com/umbrellajs/-/umbrellajs-2.10.2.tgz#5f7c6374b8f679af6a449cafe38c9857bf3af6fb"
+umbrellajs@3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/umbrellajs/-/umbrellajs-3.1.0.tgz#a4e6f0f6381f9d93110b5eee962e0e0864b10bd0"
 
 underscore.string@~2.4.0:
   version "2.4.0"
