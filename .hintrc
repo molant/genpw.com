@@ -11,9 +11,9 @@
     ],
     "ignoredUrls": [{
       "domain": "https://www\\.google-analytics\\.com/.*",
-      "rules": ["*"]
+      "hints": ["*"]
     }],
-    "rules": {
+    "hints": {
         "amp-validator": "off",
         "apple-touch-icons": "warning",
         "axe": "warning",
@@ -45,5 +45,5 @@
         "validate-set-cookie-header": "warning",
         "x-content-type-options": "warning"
     },
-    "rulesTimeout": 120000
+    "hintsTimeout": 120000
 }
